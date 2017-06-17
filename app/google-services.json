@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "213241641205",
+    "firebase_url": "https://fir-practice-1bbbe.firebaseio.com",
+    "project_id": "fir-practice-1bbbe",
+    "storage_bucket": "fir-practice-1bbbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213241641205:android:b00baa2d459a8506",
+        "android_client_info": {
+          "package_name": "id.eightstudio.www.latihanfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213241641205-vtkr17rv9f8igvg8j5837ggg4es6d2st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO0iGJGVNzyFodSnkRkR1JA9U3EVam7kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213241641205:android:2ae17029d602eb2e",
+        "android_client_info": {
+          "package_name": "id.eightstudio.www.crudfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213241641205-vtkr17rv9f8igvg8j5837ggg4es6d2st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO0iGJGVNzyFodSnkRkR1JA9U3EVam7kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
