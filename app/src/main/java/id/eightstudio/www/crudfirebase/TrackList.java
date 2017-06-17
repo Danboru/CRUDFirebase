@@ -14,6 +14,7 @@ import java.util.List;
  */
 
 public class TrackList extends ArrayAdapter<Track> {
+
     private Activity context;
     List<Track> tracks;
 

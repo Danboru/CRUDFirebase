@@ -17,6 +17,7 @@ import id.eightstudio.www.crudfirebase.Model.Artist;
  */
 
 public class ArtistList extends ArrayAdapter<Artist> {
+
     private Activity context;
     List<Artist> artists;
 

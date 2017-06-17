@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
     //our database reference object
     DatabaseReference databaseArtists;
 
+    private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,19 +77,28 @@ public class MainActivity extends AppCompatActivity {
         //attaching listener to listview
         listViewArtists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //getting the selected artist
-                Artist artist = artists.get(i);
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Artist artist = artists.get(position);
 
                 //creating an intent
-                Intent intent = new Intent(getApplicationContext(), ArtistActivity.class);
+                try {
 
-                //putting artist name and id to intent
-                intent.putExtra(ARTIST_ID, artist.getArtistId());
-                intent.putExtra(ARTIST_NAME, artist.getArtistName());
+                    Intent intent = new Intent(getApplicationContext(), SampleActivity.class);
 
-                //starting the activity with intent
-                startActivity(intent);
+                    //putting artist name and id to intent
+                    intent.putExtra(ARTIST_ID, artist.getArtistId());
+
+                    //starting the activity with intent
+                    startActivity(intent);
+                } catch ( Exception e ) {
+
+                    Toast.makeText(MainActivity.this, "Gagal Memanggil Intent", Toast.LENGTH_SHORT).show();
+                    
+                }
+
+                Toast.makeText(MainActivity.this, "Id = " + artist.getArtistId() , Toast.LENGTH_SHORT).show();
+
             }
         });
 

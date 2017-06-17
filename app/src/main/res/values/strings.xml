@@ -8,4 +8,5 @@
         <item name="sufi">Sufi</item>
         <item name="folk">Folk</item>
     </array>
+    <string name="title_activity_sample">SampleActivity</string>
 </resources>

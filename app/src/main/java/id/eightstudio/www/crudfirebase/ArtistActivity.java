@@ -108,8 +108,10 @@ public class ArtistActivity extends AppCompatActivity {
     }
 
     private void saveTrack() {
+
         String trackName = editTextTrackName.getText().toString().trim();
         int rating = seekBarRating.getProgress();
+
         if (!TextUtils.isEmpty(trackName)) {
             String id  = databaseTracks.push().getKey();
             Track track = new Track(id, trackName, rating);
